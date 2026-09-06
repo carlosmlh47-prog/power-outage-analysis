@@ -50,7 +50,7 @@ Here is the head of the cleaned DataFrame:
 The histogram below shows the distribution of outage causes. Severe weather is by far the most common cause, accounting for over 750 outages, followed by intentional attacks and system operability disruptions.
 
 <iframe
-  src="assets/cause-distribution.html"
+  src="cause-plot.html"
   width="800"
   height="600"
   frameborder="0"
