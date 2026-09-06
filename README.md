@@ -10,7 +10,7 @@ An investigation into whether economically disadvantaged states experience more 
 
 The project looks at large power outages in the continental United States from January 2000 through July 2016. The central question of the paper is: Do poor states have more severe power outages than rich states?
 
-This question is important because power outages are not experienced equally by vulnerable communities. And if lower income states are facing longer or more damaging outages, it suggests that there are systemic problems with infrastructure investment and resource allocation that policymakers need to address.
+The importance of this investigation is that households with low incomes or limited social support do not experience electricity failures in the same way as other groups - but if regions with less wealth face durations of blackouts that last longer or cause more harm, it indicates that the way engineers build electrical grids and the way governments distribute money are unfair. To fix this the officials who create laws must change how they plan for equipment and funding. There are flaws in the current methods of building energy systems plus assigning budgets. And she or he must look at those results to ensure that technical systems work for everyone.
 
 The data set contains 1,534 rows of individual major outage events. The most relevant columns to this investigation are
 
@@ -122,7 +122,7 @@ I analyzed the missingness of CUSTOMERS.AFFECTED (443 missing values out of 1,53
 
 **Response Variable:** OUTAGE.DURATION.Duration is the primary indicator of the severity of an outage in this analysis and is directly relevant to the question of whether economic disadvantage has an effect on outage outcomes.
 
-**Evaluation Metric:** RMSE (Root Mean Squared Error). Chosen because it is in the same units as the target variable (minutes), making it directly interpretable. RMSE also penalizes large errors more heavily, which is important since some outages last orders of magnitude longer than others.
+**Evaluation Metric:** RMSE (Root Mean Squared Error). Chosen because it is measured in the units as the target variable minutes making it easy to understand and interpret. RMSE also gives weight to bigger errors, which matters since some outages last much longer, than others sometimes by a huge factor.
 
 **Justification of features:** At the time of prediction (when an outage begins), we would know the location (state, region), the cause, the time of year, climate conditions, and economic characteristics of the state. We would not yet know the restoration time, total customers affected, or demand loss.
 
