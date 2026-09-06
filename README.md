@@ -1,10 +1,12 @@
 # Power Outages and Economic Inequality
 
-**By Carlos**
+**By Carlos Lopez**
 
 An investigation into whether economically disadvantaged states experience more severe power outages in the continental U.S. (January 2000 – July 2016).
 
-## Introduction
+## Introductions
+
+
 
 This project investigates major power outages in the continental United States from January 2000 to July 2016. The central question is: **Are major power outages more severe in economically disadvantaged states than in wealthier states?**
 
