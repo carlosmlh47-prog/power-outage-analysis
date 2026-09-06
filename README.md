@@ -101,3 +101,5 @@ Test Statistic: Difference in RMSE (low-income RMSE − high-income RMSE)
 Significance Level: 0.05
 Results: The model's RMSE was 3,944 minutes for low-income states and 8,881 minutes for high-income states. The permutation test yielded a p-value of 0.747.
 Conclusion: We fail to reject the null hypothesis. The model actually performs better (lower RMSE) for low-income states than high-income states, and the p-value of 0.747 indicates there is no statistically significant difference in model performance between groups. The model appears to be fair across income groups.
+Results: The model's RMSE was 3,944 minutes for low-income states and 8,881 minutes for high-income states. The permutation test yielded a p-value of 0.747.
+Conclusion: We fail to reject the null hypothesis. The model actually performs better (lower RMSE) for low-income states than high-income states, and the p-value of 0.747 indicates there is no statistically significant difference in model performance between groups. The model appears to be fair across income groups.
