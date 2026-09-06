@@ -91,7 +91,7 @@ I believe CUSTOMERS.AFFECTED is likely **MNAR** (Missing Not at Random). Utiliti
 
 ### Missingness Dependency
 <iframe
-  src="assets/cause-plot.html"
+  src="assets/missingness-plot.html"
   width="800"
   height="600"
   frameborder="0"
