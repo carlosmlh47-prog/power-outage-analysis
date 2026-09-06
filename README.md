@@ -81,8 +81,7 @@ The table below shows mean outage duration (in minutes) by cause category and in
 | severe weather | 3,677 | 4,074 |
 | system operability disruption | 583 | 909 |
 
-Equipment failure shows a striking gap, with low income states averaging 3,858 minutes compared to 456 for high income states. Severe weather outages also last longer in low income states (4,074 vs 3,677 minutes).
-
+The equipment failure difference is remarkable, with low income states averaging 3,858 minutes, compared to 456 minutes for high income states. Severe weather outages also are longer in low income states (4,074 v. 3,677 minutes).
 ## Assessment of Missingness
 
 ### NMAR Analysis
