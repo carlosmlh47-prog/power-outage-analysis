@@ -58,7 +58,7 @@ The histogram below shows the distribution of outage causes. Severe weather is b
 
 ### Bivariate Analysis
 
-The box plot below compares outage duration across the top three cause categories, split by income group. For severe weather outages, low-income states show a slightly higher median duration than high income states.
+The box plot below compares outage duration across the top three cause categories, split by income group. For severe weather outages, low income states show a slightly higher median duration than high income states.
 
 <iframe
   src="assets/duration-by-income.html"
@@ -111,7 +111,7 @@ I analyzed the missingness of CUSTOMERS.AFFECTED (443 missing values out of 1,53
 - **Test Statistic:** Difference in means (low income mean minus high income mean)
 - **Significance Level:** 0.05
 
-**Results:** Low income states averaged 4,074 minutes versus 3,677 minutes for high income states, a difference of about 397 minutes (~6.6 hours). However, the permutation test yielded a **p-value of 0.152**, which is above our significance level of 0.05.
+**Results:** Low income states averaged 4,074 minutes versus 3,677 minutes for high income states, a difference of about 397 minutes (~6.6 hours). However, the permutation test yielded a **pvalue of 0.152**, which is above our significance level of 0.05.
 
 **Conclusion:** We fail to reject the null hypothesis. While low income states do show longer average severe weather outages, the difference is not statistically significant at the 0.05 level. The observed gap could plausibly be due to random variation rather than a systematic economic effect.
 
@@ -170,6 +170,6 @@ The final model improved over the baseline on both train and test RMSE, though t
 - **Test Statistic:** Difference in RMSE (low income RMSE minus high income RMSE)
 - **Significance Level:** 0.05
 
-**Results:** The model's RMSE was 3,944 minutes for low income states and 8,881 minutes for high income states. The permutation test yielded a **p-value of 0.747**.
+**Results:** The model's RMSE was 3,944 minutes for low income states and 8,881 minutes for high income states. The permutation test yielded a **pvalue of 0.747**.
 
 **Conclusion:** We fail to reject the null hypothesis. The model actually performs better (lower RMSE) for low income states than high income states, and the p value of 0.747 indicates there is no statistically significant difference in model performance between groups. The model appears to be fair across income groups.
