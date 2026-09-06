@@ -4,7 +4,7 @@
 
 An investigation into whether economically disadvantaged states experience more severe power outages in the continental U.S. (January 2000 – July 2016).
 
-## Introductions
+## Introduction
 
 
 
@@ -90,6 +90,12 @@ Equipment failure shows a striking gap, with low-income states averaging 3,858 m
 I believe CUSTOMERS.AFFECTED is likely **MNAR** (Missing Not at Random). Utilities may be less likely to report customer impact numbers for smaller or less notable outages, meaning the missingness is related to the value itself. Smaller customer counts are less likely to be reported. Additional data such as internal utility reporting policies could potentially explain this missingness and make it MAR.
 
 ### Missingness Dependency
+<iframe
+  src="assets/missingness-plot.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 I analyzed the missingness of CUSTOMERS.AFFECTED (443 missing values out of 1,534).
 
