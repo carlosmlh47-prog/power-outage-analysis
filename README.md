@@ -100,28 +100,27 @@ I analyzed the missingness of CUSTOMERS.AFFECTED (443 missing values out of 1,53
 
 **Depends on CAUSE.CATEGORY (pvalue = 0.0):** The rate of missing customer data varies dramatically by cause. Only 6% of severe weather outages are missing customer data, but 86% of fuel supply emergencies are. This makes sense because severe weather events are high profile and well tracked, while fuel supply issues may not involve direct customer impact measurement.
 
-**Does not depend on POPPCT_URBAN (pvalue = 0.128):** The mean urban population percentage is similar whether customer data is missing (81.7%) or not (80.7%). This suggests that how urban an area is does not significantly affect whether customer impact gets reported.
+**Does not depend on POPPCT_URBAN (pvalue = 0.128):** When customer data is missing (81.7%) or not (80.7%), the average percentage of urban population is similar. This means that the urbanization of an area does not influence reporting of customer impact to a significant degree.
 
 ## Hypothesis Testing
 
 **Question:** Are severe weather outages more severe in low income states?
 
-- **Null Hypothesis:** The average outage duration for severe weather outages is the same for low income and high income states. Any observed difference is due to random chance.
+- **Null Hypothesis:**  There is no difference in the mean outage duration for severe weather outages in low-income states and high-income states. The difference shown is due to random chance.
 - **Alternative Hypothesis:** The average outage duration for severe weather outages is longer in low income states.
 - **Test Statistic:** Difference in means (low income mean minus high income mean)
 - **Significance Level:** 0.05
 
-**Results:** Low income states averaged 4,074 minutes versus 3,677 minutes for high income states, a difference of about 397 minutes (~6.6 hours). However, the permutation test yielded a **pvalue of 0.152**, which is above our significance level of 0.05.
+**Results:** The average for low income states was 4,074 minutes compared to 3,677 minutes for high income states, a difference of about 397 minutes (~6.6 hours) However, the p-value from the permutation test was 0.152, which is higher than our significance level of 0.05.
 
-**Conclusion:** We fail to reject the null hypothesis. While low income states do show longer average severe weather outages, the difference is not statistically significant at the 0.05 level. The observed gap could plausibly be due to random variation rather than a systematic economic effect.
-
+**Conclusion:** We cannot reject the null hypothesis. Low-income states do have longer average severe weather outages but the difference is not statistically significant at the 0.05 level. The observed gap could well be due to random variation rather than systematic economic effect.
 ## Framing a Prediction Problem
 
 **Prediction Problem:** Predict the duration of a major power outage (OUTAGE.DURATION, in minutes).
 
 **Type:** Regression
 
-**Response Variable:** OUTAGE.DURATION. Duration is the primary measure of outage severity in this analysis and directly connects to the question of whether economic disadvantage affects outage outcomes.
+**Response Variable:** OUTAGE.DURATION.Duration is the primary indicator of the severity of an outage in this analysis and is directly relevant to the question of whether economic disadvantage has an effect on outage outcomes.
 
 **Evaluation Metric:** RMSE (Root Mean Squared Error). Chosen because it is in the same units as the target variable (minutes), making it directly interpretable. RMSE also penalizes large errors more heavily, which is important since some outages last orders of magnitude longer than others.
 
